@@ -13,6 +13,8 @@ public class Regex {
 		Matcher mail = email.matcher("abc@gmail.com");
 		Pattern Mobile = Pattern.compile("[0-9]{0,2}[1-9] [0-9]{10}");
 		Matcher mobile = Mobile.matcher("91 8976544391");
+		Pattern password = Pattern
+				.compile("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).{8,20}$");
 
 		System.out.println("string matches the given Regex -" + first.matches());
 		System.out.println("string matches the given Regex -" + last.matches());
